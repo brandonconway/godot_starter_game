@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://skwuare.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 32, 32 )
+
+[node name="Tile" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="skwuare" type="Sprite" parent="CollisionShape2D"]
+position = Vector2( 1.08809, 0.310989 )
+scale = Vector2( 2.02751, 1.96122 )
+texture = ExtResource( 1 )
